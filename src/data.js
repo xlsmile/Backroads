@@ -1,0 +1,12 @@
+export const pagesLinks = [
+  { id: '01', href: '#home', text: 'home' },
+  { id: '02', href: '#about', text: 'about' },
+  { id: '03', href: '#services', text: 'services' },
+  { id: '04', href: '#tours', text: 'tours' },
+];
+
+export const socialLinks = [
+  { id: '01', href: 'https://www.facebook.com', name: 'facebook' },
+  { id: '02', href: 'https://www.twitter.com', name: 'twitter' },
+  { id: '03', href: 'https://www.squarespace.com', name: 'squarespace' },
+];
