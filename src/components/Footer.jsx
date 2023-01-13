@@ -1,23 +1,11 @@
-import { socialLinks } from '../data';
 import Links from './Links';
+import Icons from './Icons';
 
 const Footer = () => {
   return (
     <footer className="section footer">
       <Links navlinks="footer-links" navlink="footer-link" />
-      <ul className="footer-icons">
-        {socialLinks.map((link) => {
-          const { id, href, icon } = link;
-          return (
-            <li key={id}>
-              <a href={href} target="_blank" rel="noreferrer" className="footer-icon">
-                <i className={`fab fa-${icon}`}></i>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-
+      <Icons navIcons="footer-icons" navIcon="footer-icon" />
       <p className="copyright">
         copyright &copy; Backroads travel tours company
         <span id="date">{new Date().getFullYear()}</span> all rights reserved
